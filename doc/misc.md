@@ -55,7 +55,7 @@ The &lt;CTRL/A> command may be used to print out a statement at any point
 during the execution of a command string. The &lt;CTRL/A> command has the
 general form:
 
-```^Atext&lt;CTRL/A>```
+```^Atext<CTRL/A>```
 
 or
 
