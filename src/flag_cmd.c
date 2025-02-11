@@ -514,7 +514,7 @@ bool scan_flag1(struct cmd *cmd)
             confirm(cmd, NO_N);
 
             struct ifile *ifile = &ifiles[istream];
-            int_t eof = feof(ifile->fp) ? -1 : 0;
+            int_t eof = (ifile->fp == NULL) ? 0 : feof(ifile->fp) ? -1 : 0;
 
             store_val(eof);
 
