@@ -124,8 +124,8 @@ endif
 
 ifdef   lto                         # Enable link-time optimization
 
-    CFLAGS += -flto=2
-    LINKOPTS += -flto=2
+    CFLAGS += -flto=auto
+    LINKOPTS += -flto=auto
 
 endif
 

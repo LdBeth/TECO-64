@@ -45,7 +45,7 @@
 void exec_U(struct cmd *cmd)
 {
     assert(cmd != NULL);
-    confirm(cmd, NO_NEG_M);
+    // confirm(cmd, NO_NEG_M);
 
     if (!cmd->n_set)                    // n argument?
     {
