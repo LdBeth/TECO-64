@@ -88,6 +88,7 @@ void exec_F_greater(struct cmd *cmd)
         {
             cbuf->pos = ctrl.loop[i].pos; // Go back to start of loop
             cmd_line = ctrl.loop[i].line; // Reset line number
+            ctrl.depth = ctrl.loop[i].depth;
         }
         else
         {
@@ -121,6 +122,7 @@ void exec_F_less(struct cmd *cmd)
         uint i = ctrl.level - 1;
 
         cbuf->pos = ctrl.loop[i].pos;
+        ctrl.depth = ctrl.loop[i].depth;
     }
 
     reset_x();                          // Reset expression stack
